@@ -34,7 +34,7 @@ body{
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Roboto Condensed', sans-serif;
     color:orange;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 900; 
     text-decoration: none; 
 }
@@ -99,8 +99,16 @@ main{
 .project-container{
     display: flex;
     background-color: #1a1527;
-    margin: 20px 0px;
+    margin: 50px 0px;
 }
+.project-container.img-right{
+    flex-direction: row;
+}
+.project-container.img-left{
+    flex-direction: row-reverse;
+}
+
+
 .project-container .line-design{
     /* height: 100%; */
     /* width: 20px; */
@@ -116,12 +124,20 @@ main{
 }
 .project-container .content .info-container{
     display: flex;
-   
+}
+.project-container.img-right .content .info-container{
+    flex-direction: row;
+}
+.project-container.img-left .content .info-container{
+    flex-direction: row-reverse;
 }
 
 .project-container .content  .project-name{
     font-size: 25px;
     font-weight:900;
+}
+.project-container.img-left .content  .project-name{
+    text-align: right;
 }
 
 /* .project-container .info p.project-name{
@@ -129,11 +145,25 @@ main{
     font-weight:900;
 } */
 
+
+
 .project-container .content .info-container .info p.intro{
     margin: 40px 0px;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     font-style: italic;
+    text-align: justify;
 }
+.project-container.img-right .content .info-container .info p.intro{
+    margin-right: 100px;
+   
+}
+.project-container.img-left .content .info-container .info p.intro{
+    margin-left: 100px;
+
+}
+
+
+
 
 .project-container .project-image-container{
     /* padding:40px 20px; */
@@ -151,14 +181,16 @@ main{
     padding: 10px 10px;
     background-color: orange;
     color: white;
+    /* width: 30vw; */
 }
 
 .project-container .info .source-button{
     margin-left: 10px;
- 
 }
 
-
+.project-container.img-left .project-button-container{
+    text-align: right;
+}
 
 
 .watermark div h1{
@@ -207,21 +239,36 @@ footer{
 
 
 
+
+
+
+
+
+
 /* responsive design for project */
 @media only screen and (max-width: 1250px ){
-    .project-container .content .info-container .info p.intro{
+    .project-container.img-right .content .info-container .info p.intro {
         margin: 40px 0px;
-        /* margin-right: 0; */
+    }
+    .project-container.img-left .content .info-container .info p.intro {
+        margin: 40px 0px;
+    }
+    .project-container.img-right .content .info-container{
+        flex-direction: column-reverse;
+       
     }
 
-
-    .project-container .content .info-container{
+    .project-container.img-left .content .info-container{
         flex-direction: column-reverse;
        
     }
     .project-container .project-image-container{
         margin-top: 40px;
         justify-content: center;
+    }
+
+    .project-container.img-left .content  .project-name{
+        text-align: left;
     }
 
 }
@@ -286,18 +333,18 @@ footer{
 
 /* removing the surname and making the font smaller */
 @media only screen and (max-width:600px){
-    /* .logo p{
-        font-size: 2rem;
+    .project-container .content{
+        display:flex;
+        flex-direction: column;
+        margin: 40px 15px;
     }
-    .logo p span{
-        display: none;
-    } */
     .logo.active{
         display: none;
     }
     .logo.unactive{
         display: block;
     }
+
 }
 
 /* project main content for smaller screen optional */
@@ -327,11 +374,28 @@ footer{
      margin-right: 20px;
     }
 
-
-
     /* making image of project smaller */
     .project-container .project-image-container img{
         height: 30vw;
+    }
+
+    /* making button line-project and source-code margin samller */
+    @media only screen and (max-width : 390px){
+        .project-container .info .source-button{
+            margin-left:0;
+            margin-top: 15px;
+        }
+        .project-button-container{
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .project-container .info button{
+            
+            width: 50%;
+        }
     }
  }
  
