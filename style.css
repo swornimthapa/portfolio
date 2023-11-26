@@ -28,14 +28,20 @@ body{
     padding: 0 25px;
     justify-content: space-between;
 }
-.logo p{
+.logo p a{
     /* font-family:'Lobster Two'; */
     /* font-family: 'Source Code Pro', monospace; */
     font-family: 'Roboto Condensed', sans-serif;
     color:orange;
     font-size: 3rem;
-    font-weight: 900;  
+    font-weight: 900; 
+    text-decoration: none; 
 }
+.logo.unactive{
+    display: none;
+}
+
+
 .navbar .navbar-box ul{
     color: white;
     display: flex;
@@ -50,6 +56,18 @@ body{
     margin-left: 20px;
   
 }
+
+.navbar .navbar-box ul li a {
+    text-decoration: none;
+    color: white; 
+   
+} 
+
+.navbar .navbar-box ul li a.active {
+    /* text-decoration: none; */
+    color: orange; 
+   
+} 
 
 .navbar-box i{
     display: none;
@@ -131,9 +149,11 @@ footer{
     bottom: -20vh;
     background-color: #26236b;
     color: white;
+    
+
 }
 .footer-container{
-    padding: 20px 150px;
+    padding: 20px 70px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -166,7 +186,7 @@ footer{
 }
 
 /* smaler screen */
-@media only screen and (max-width: 940px ){
+@media only screen and (max-width: 1070px ){
    
     .navbar .navbar-box ul{
         position: fixed;
@@ -234,11 +254,17 @@ footer{
 
 /* removing the surname and making the font smaller */
 @media only screen and (max-width:600px){
-    .logo p{
+    /* .logo p{
         font-size: 2rem;
     }
     .logo p span{
         display: none;
+    } */
+    .logo.active{
+        display: none;
+    }
+    .logo.unactive{
+        display: block;
     }
 }
 
@@ -255,3 +281,27 @@ footer{
         align-items: center;
     }
 }
+
+
+/* making the footer responsive */
+@media only screen and (max-width : 780px){
+   .footer-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        /* width: fit-content; */
+     
+   }
+   .copyright-container{
+     margin: 15px;
+     text-align: center;
+     
+   
+   }
+   .copyright-container pre{
+        
+   }
+   .footer-container ul li{
+    margin-right: 20px;
+   }
+}
+
