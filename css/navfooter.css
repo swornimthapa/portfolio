@@ -18,7 +18,7 @@ body{
     /* background-color: #efef0b; */
     /* background-color:#0f0d15; */
   
-
+    background-color:#0f0d15;
     width: 100%;
     padding: 20px 0;
 }
@@ -27,6 +27,9 @@ body{
     align-items: center;
     padding: 0 25px;
     justify-content: space-between;
+    z-index: 999;
+    background-color:#0f0d15;
+
 }
 .logo p a{
     /* font-family:'Lobster Two'; */
@@ -126,7 +129,18 @@ footer{
 
 /* smaler screen */
 @media only screen and (max-width: 1070px ){
-   
+    .navbar-box{
+        position: fixed;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar{
+        position: fixed;
+    }
+    main{
+        margin-top: 60px;
+    }
     .navbar .navbar-box ul{
         position: fixed;
         flex-direction: column;

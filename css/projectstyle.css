@@ -13,13 +13,22 @@
 }
 
 .projects-main-section .projects-main-container h1{
-    font-size: 40px;
+    font-size: 2rem;
 
 }
-
+.project-container {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-container.zoomed {
+    transform: scale(1.1);
+  }
 .project-container{
     display: flex;
     background-color: #1a1527;
+    /* background-color: #000000; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     margin: 50px 0px;
 }
 .project-container.img-right{
@@ -100,7 +109,7 @@
 
 .project-container .info button{
     padding: 10px 10px;
-    background-color: orange;
+    background-color: #ffa500;
     color: white;
     /* width: 30vw; */
 }
