@@ -1,25 +1,25 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-}
-body{
+} */
+/* body{ */
     /* background-color: #1d1d1b; */
     /* background-color:#040622; */
-    background-color:#0f0d15;
+    /* background-color:#0f0d15;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
    
 
-}
-.navbar{
+} */
+/* .navbar{ */
     /* background-color: #efef0b; */
     /* background-color:#0f0d15; */
   
 
-    width: 100%;
+    /* width: 100%;
     padding: 20px 0;
 }
 .navbar-box{
@@ -28,10 +28,10 @@ body{
     padding: 0 25px;
     justify-content: space-between;
 }
-.logo p a{
+.logo p a{ */
     /* font-family:'Lobster Two'; */
     /* font-family: 'Source Code Pro', monospace; */
-    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif;
     color:orange;
     font-size: 2rem;
     font-weight: 900; 
@@ -44,9 +44,9 @@ body{
 
 .navbar .navbar-box ul{
     color: white;
-    display: flex;
+    display: flex; */
     /* font-family: 'Source Code Pro', monospace; */
-    font-family: 'Roboto Condensed', sans-serif;
+    /* font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: bolder;
 
@@ -63,9 +63,9 @@ body{
    
 } 
 
-.navbar .navbar-box ul li a.active {
+.navbar .navbar-box ul li a.active { */
     /* text-decoration: none; */
-    color: orange; 
+    /* color: orange; 
    
 } 
 
@@ -76,7 +76,7 @@ body{
 main{
     flex-grow: 1;
 
-}
+} */
 
 
 /* water-mark */
@@ -144,7 +144,7 @@ main{
 
 
 /* footer css */
-footer{
+/* footer{
     position: relative;
     bottom: -20vh;
     background-color: #26236b;
@@ -157,9 +157,9 @@ footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1rem; */
     /* overflow-x: hidden; */
-}
+/* }
 .footer-container ul {
     display: flex;
 }
@@ -171,14 +171,14 @@ footer{
 .footer-container ul li i{
     color: white;    
     font-size: 1.3rem;
-}
+} */
 
 
 /* changing the padding and margin in left and right of screen */
 @media only screen and (max-width: 1040px ){
-    .navbar-box{
+    /* .navbar-box{
         padding: 0 25px;
-    }
+    } */
     .home-container{
         margin-left: 170px;
         margin-right: 170px;
@@ -243,30 +243,30 @@ footer{
     }
 
 
-    .navbar-box i {
+    /* .navbar-box i {
         display: block;
         font-size: 25px;
         color:orange;
     }
-    
+     */
  
-}
+/* } */
 
 /* removing the surname and making the font smaller */
-@media only screen and (max-width:600px){
+/* @media only screen and (max-width:600px){ */
     /* .logo p{
         font-size: 2rem;
     }
     .logo p span{
         display: none;
     } */
-    .logo.active{
+    /* .logo.active{
         display: none;
     }
     .logo.unactive{
         display: block;
     }
-}
+} */
 
 @media only screen and (max-width : 850px){
     .home-container{
@@ -283,12 +283,12 @@ footer{
 }
 
 
-/* making the footer responsive */
+/* making the footer responsive
 @media only screen and (max-width : 780px){
    .footer-container{
         flex-direction: column-reverse;
         align-items: center;
-        /* width: fit-content; */
+      
      
    }
    .copyright-container{
@@ -303,5 +303,5 @@ footer{
    .footer-container ul li{
     margin-right: 20px;
    }
-}
+} */
 
