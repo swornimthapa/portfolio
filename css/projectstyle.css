@@ -16,14 +16,7 @@
     font-size: 2rem;
 
 }
-.project-container {
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .project-container.zoomed {
-    transform: scale(1.1);
-  }
+
 .project-container{
     display: flex;
     background-color: #1a1527;

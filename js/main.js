@@ -4,15 +4,6 @@ squareCaretdown.onclick=function(){
     navbar.classList.toggle("active");
 }
 
-projectContainers.forEach(container => {
-    container.addEventListener('mouseenter', () => {
-      container.classList.add('zoomed');
-    });
-  
-    container.addEventListener('mouseleave', () => {
-      container.classList.remove('zoomed');
-    });
-  });
 
 
 

@@ -26,6 +26,14 @@
       rel="stylesheet"
     />
 
+    <!-- NEW FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Source+Code+Pro&family=Special+Elite&family=Teko:wght@300&family=Vina+Sans&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -36,44 +44,51 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/navfooter.css">
-
+    <link rel="stylesheet" href="./css/navfooter.css" />
   </head>
   <body>
+    <section class="background">
+      <div class="background-container">
+        <div class="left-div"></div>
+        <div class="right-div"></div>
+      </div>
+    </section>
+
+
     <header>
       <nav class="navbar">
         <div class="navbar-box">
           <div class="logo active">
-            <p class="active"><a href="#">&lt;Swornim <span>Thapa/&gt;</span></a></p>
+            <p class="active">
+              <a href="#">Swornim <span>Thapa</span></a>
+            </p>
           </div>
           <div class="logo unactive">
-            <p class="active"><a href="#">&lt;Swornim/&gt;</a></p>
-          </div>  
+            <p class="active"><a href="#">Swornim</a></p>
+          </div>
           <ul>
-            <li><a class="active" href="">&lt;Home/&gt;</a></li>
-            <li><a href="./projects.html">&lt;Projects/&gt;</a></li>
-            <li><a href="">&lt;Skills/&gt;</a></li>
-            <li><a href="">&lt;About/&gt;</a></li>
-            <li><a href="">&lt;Contact/&gt;</a></li>
-            <li><a href="">&lt;Resume/&gt;</a></li>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Resume</a></li>
           </ul>
           <i class="fa-solid fa-square-caret-down caretDown"></i>
-          
         </div>
       </nav>
-
     </header>
     <main>
-      <section class="watermark">
+      <!-- <section class="watermark">
         <div>
           <h1>DEVELOPER</h1>
         </div>
-      </section>
-      <section class="home">
+      </section> -->
+      <!-- <section class="home">
         <div class="home-container">
           <div id="home-intro">
             <span>Hi, my name is </span>
-            <span style="color: #5918df; font-weight: bolder;">Swornim Thapa</span>
+            <span style="color: #7A2048; font-weight: bolder;">Swornim Thapa</span>
             <p>I <span style="color: white; font-style: italic; font-weight: 700; font-family: 'Times New Roman', Times, serif;">design</span> and develop websites</p>
             <button type="button"><> See my work</button>
           </div>
@@ -81,24 +96,63 @@
             <img src="./images/Screenshot 2023-10-31 193312.png" alt="white_icon_image" />
           </div>
         </div>
+      </section> -->
+      <div class="mouse">
+        <i class="fa-solid fa-computer-mouse"></i>
+      </div>
+      <section class="home-section">
+        
+        <div class="line"></div>
+        <div  class="intro-container">
+          <h1 class="start">start</h1>
+          <h1>Hi, my name is <span style="color: rgb(255 219 96);">Swornim Thapa</span></h1>
+          <h1>I <span>design</span> and develop websites</h1>
+          <h1 class="start" style="margin-top: 30px;">Let me show you.......</h1>
+          <button type="button">See my work</button>
+      
+        </div>
       </section>
+
+      <!-- <section class="home-section">
+        <div class="background-text">
+          <h1>Swornim</h1>
+          <i class="fa-solid fa-hat-cowboy"></i>
+        </div>  
+        <div class="home-intro-container">
+          <h1>HI,</h1>
+          <h1>my name is swornim thapa</h1>
+      </div>
+      </section> -->
+      
+
+
     </main>
-    
 
     <footer>
-        <div class="footer-container">
-            <div class="copyright-container">
-                <pre style="display: inline;">&copy; 2023  Swornim Thapa  </pre>
-                <span> All rights researved</span> 
-            </div>
-            <ul>
-              <li><a href="https://twitter.com/swornimThapaa"><i id="twitter-button" class="fa-brands fa-x-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/swornim-thapa-718298269/"><i id="linkedin-button" class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href="https://github.com/swornimthapa"><i id="github-button" class="fa-brands fa-github"></i></a></li>
-            </ul>
+      <div class="footer-container">
+        <div class="copyright-container">
+          <pre style="display: inline">&copy; 2023  Swornim Thapa  </pre>
+          <span> All rights researved</span>
         </div>
+        <ul>
+          <li>
+            <a href="https://twitter.com/swornimThapaa"
+              ><i id="twitter-button" class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/swornim-thapa-718298269/"
+              ><i id="linkedin-button" class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/swornimthapa"
+              ><i id="github-button" class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
 
     <script src="./js/main.js"></script>
   </body>
