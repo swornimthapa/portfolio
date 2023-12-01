@@ -52,11 +52,12 @@
         padding: 0 13vw;
         padding-top:10vh
     }
-    .project-container{
+    /* .project-container{
         display: flex;
-        justify-content: flex-end;
-      
-    }
+        justify-content: flex-end; */
+        /* justify-content: center; */
+    
+    /* } */
 }
 
 
@@ -66,18 +67,46 @@
 
     .project-main-container{
         padding: 0 11vw;
-        padding-top:10vh
-    }
-    .project-main-container{
-        flex-direction: column;
-    }
-    .project-container.second{
-        margin-top: 10vh;
+        /* padding-right: 30vw; */
+        padding-top:10vh;
     }
 }
 
-@media only screen and (max-width: 1060px ){
+
+/* 1024 vanda muni project ko image in px */
+@media only screen and (max-width: 1024px ){
     .project-container img{
-        /* height: 13vh; */
+        height: 145px;
+    }
+}
+
+
+@media only screen and (max-width: 815px ){
+    .project-container img{
+        height: 140px;
+    }
+    .project-main-container{
+       flex-direction: column;
+       align-items: flex-end;
+    
+    }
+    .project-container.second{
+        margin-top: 10vh;
+    } 
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 815px){
+    .project-main-container{
+        margin-right: 20vw;
+     }
+     .project-container img{
+        height: 160px;
+    }  
+}
+
+@media only screen and (max-width: 300px ){
+    .project-container img{
+        height: 100px;
     }
 }
