@@ -23,7 +23,6 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
 
 }
 .navbar{
@@ -225,12 +224,12 @@ footer{
          /* width: fit-content; */
       
     }
-    .copyright-container{
+    /* .copyright-container{
       margin: 15px;
       text-align: center;
       
     
-    }
+    } */
     .footer-container ul li{
      margin-right: 20px;
     }

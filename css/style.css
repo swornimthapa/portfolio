@@ -19,9 +19,11 @@
 
 
 .home-section{
+    height: 70vh;
     display: flex;
     margin: 0 20vw;
     margin-top: 20vh;
+    overflow: hidden;    
 
 }
  .mouse{

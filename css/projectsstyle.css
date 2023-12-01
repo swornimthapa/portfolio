@@ -1,0 +1,83 @@
+.project-section{
+    background-color: rgb(35 38 45);
+    /* height: 100vh; */
+}
+
+.project-main-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15vw;
+    padding-top:10vh
+
+}
+.project-main-container.second{
+    padding-bottom: 10vh;
+}
+.project-container{
+    color:rgb(255 219 96);
+    display: flex;
+    font-size: 3vmax;
+  
+}
+.project-child-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.project-container img{
+    /* height: 13vw; */
+    height: 13vmax;
+}
+.project-container h1{
+    margin-top: 10px;
+    font-size: 0.5em;
+}
+.project-container .project-number{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    /* font-size: 3em; */
+}
+
+
+
+/* Responsive code for project container */
+@media only screen and (max-width: 1300px ){
+    .project-container img{
+        /* height: 150px; */
+    }
+
+    .project-main-container{
+        padding: 0 13vw;
+        padding-top:10vh
+    }
+    .project-container{
+        display: flex;
+        justify-content: flex-end;
+      
+    }
+}
+
+
+/* drop down button appears */
+@media only screen and (max-width: 1070px ){
+   
+
+    .project-main-container{
+        padding: 0 11vw;
+        padding-top:10vh
+    }
+    .project-main-container{
+        flex-direction: column;
+    }
+    .project-container.second{
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 1060px ){
+    .project-container img{
+        /* height: 13vh; */
+    }
+}
