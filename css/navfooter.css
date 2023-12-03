@@ -25,22 +25,22 @@ body{
     min-height: 100vh;
 
 }
-.navbar{
-    /* background-color:#0f0d15; */
-    /* background-color: #408EC6; */
-    /* background-color: rgb(35 38 45); */
-    /* width: 100%;
-    padding: 20px 0; */
-}
+
 .navbar-box{
     /* position: fixed; */
     display: flex;
     align-items: center;
     padding: 10px 25px;
     justify-content: space-between;
-    /* z-index: 999; */
-    /* background-color:#0f0d15; */
-    /* background-color: rgb(35 38 45); */
+    
+  
+}
+.navbar-box.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    
 }
 .logo p a{
     font-family: 'Bebas Neue', sans-serif;
@@ -93,7 +93,7 @@ body{
 }
 main{
     flex-grow: 1;
-
+    
 }
 
 
@@ -150,30 +150,27 @@ footer{
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
+        transition: position 1s ease;
     }
-    .navbar{
-        /* position: fixed; */
-    }
-    main{
-        /* margin-top: 60px; */
-    }
+ 
     .navbar .navbar-box ul{
         position: fixed;
         flex-direction: column;
         width: 100vw;
         left: 0;
-        /* top: 4.5rem; */
         top: 4.8rem;
         text-align: center;
-        /* background-color: #efef0b; */
-        background-color:#0f0d15;
-
+        background-color:rgb(35 38 45);
         transition: 0.6s;
         height: 0;
         overflow: hidden;
+        border-radius:10%;
+        
+        z-index: 999;
     }
     .navbar .navbar-box ul.active{
         height: 25rem;
+        border:2px solid rgb(255 219 96);
     }
     .navbar .navbar-box ul li{
         margin-left: 0px;

@@ -19,17 +19,20 @@
 
 
 .home-section{
-    height: 70vh;
+    height: 85vh;
     display: flex;
     margin: 0 20vw;
     margin-top: 20vh;
     overflow: hidden;    
-
+    /* position: relative; */
 }
  .mouse{
     position: absolute;
     right: 10vw;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    /* flex-grow: 1; */
+    /* align-self:self-end; */
+    bottom: 5vh;
     font-size: 3rem;
     color: rgb(255 219 96);
 }

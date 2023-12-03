@@ -6,4 +6,24 @@ squareCaretdown.onclick=function(){
 
 
 
+let navbarBox=document.querySelector(".navbar-box");
+let currentscrollpostion=window.scrollY;
+window.addEventListener('scroll',function(){
+    let nextscrollpostion= window.scrollY;
+    let navbarUl = this.document.querySelector(".navbar .navbar-box ul");
+    let isCaretactive = navbarUl.classList.contains("active");
+    // console.log(isCaretactive);
+    if(isCaretactive){
+        navbarBox.classList.add('fixed');
+    }else{
+        if(nextscrollpostion>currentscrollpostion){
+            navbarBox.classList.remove('fixed');
+        }else{
+            navbarBox.classList.add('fixed');
+        }
+    }
+    currentscrollpostion=nextscrollpostion;
+})
+
+
 
