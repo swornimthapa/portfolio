@@ -56,19 +56,19 @@
     </section>
 
     <header>
-      <nav class="navbar">
+      <nav class="navbar" id="navbar">
         <div class="navbar-box">
           <div class="logo active">
             <p class="active">
-              <a href="#">Swornim <span>Thapa</span></a>
+              <a href="#">Swornim Thapa</a>
             </p>
           </div>
           <div class="logo unactive">
-            <p class="active"><a href="#">Swornim</a></p>
+            <p class="active"><a href="./index.html">Swornim</a></p>
           </div>
           <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+            <li><a class="active" href="#navbar">Home</a></li>
+            <li><a href="#project-section">Projects</a></li>
             <li><a href="./skills.html">Skills</a></li>
             <li><a href="">About</a></li>
             <li><a href="">Contact</a></li>
@@ -79,31 +79,37 @@
       </nav>
     </header>
     <main>
-      
-      <div class="mouse">
-        <i class="fa-solid fa-computer-mouse"></i>
-      </div>
-      <section class="home-section">
-        
-        <div class="line"></div>
-        <div class="intro-container">
-          <h1 class="start">start</h1>
-          <h1>
-            Hi, my name is
-            <span style="color: rgb(255 219 96)">Swornim Thapa</span>
-          </h1>
-          <h1>I <span>design</span> and develop websites</h1>
-          <h1 class="start" style="margin-top: 30px">Let me show you.......</h1>
-          <button type="button">See my work</button>
+   
+        <div class="mouse">
+          <a href="#project-section"><i class="fa-solid fa-computer-mouse"></i></a>
+          
         </div>
-       
-      </section>
+        <section class="home-section" id="home-section">
+          
+          <div class="line"></div>
+          <div class="intro-container">
+            <h1 class="start" > <div class="curtain-reveal" style="background-color:rgb(211 212 217) ;"></div> start</h1>
+            <h1>
+              <div class="curtain-reveal"></div>
+              Hi, my name is
+              <span style="color: rgb(255 219 96)">Swornim Thapa</span>
+            </h1>
+            <h1> <div class="curtain-reveal"></div> I <span>design</span> and develop websites</h1>
+            <h1 class="start" style="margin-top: 30px"> <div class="curtain-reveal" style="background-color:rgb(211 212 217) ;"></div>Let me show you.......</h1>
+            <button type="button">See my work</button>
+          </div>
+         
+        </section>
+
+
 
       
 
-      <section class="project-section">
+      <section class="project-section" id="project-section">
+        <div class="line"></div>
         <div class="project-main-container">
           <div class="project-container">
+            <div class="curtain-reveal"></div>
             <h1 class="project-number"><span>0</span><span>1</span></h1>
             <div class="project-child-container">
               <img src="./images/1.png" alt="file-transfer-system" />
@@ -112,6 +118,8 @@
           </div>
           
           <div class="project-container second">
+            <div class="curtain-reveal"></div>
+
             <h1 class="project-number"><span>0</span><span>2</span></h1>
             <div class="project-child-container">
               <img src="./images/fourierseries.png" alt="fourierseries" />
@@ -164,7 +172,8 @@
         </ul>
       </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/animation.js"></script>
   </body>
 </html>

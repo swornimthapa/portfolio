@@ -1,13 +1,26 @@
 .project-section{
     background-color: rgb(35 38 45);
+    overflow-y: hidden;
     /* height: 100vh; */
+    position: relative;
+}
+
+.project-section .line{
+    height: 100%;   
+    width: 4px;
+    background-color:rgb(255 219 96);
+    position: absolute;
+    margin-left: 20vw;
+    /* z-index: 10; */
 }
 
 .project-main-container{
     display: flex;
     justify-content: space-between;
     padding: 0 15vw;
-    padding-top:10vh
+    padding-top:10vh;
+    position: relative;
+    z-index: 70;
 
 }
 .project-main-container.second{
@@ -17,7 +30,11 @@
     color:rgb(255 219 96);
     display: flex;
     font-size: 3vmax;
-  
+    position: relative;
+    width: max-content;
+    /* width: 0;
+    overflow: hidden; */
+
 }
 .project-child-container{
     display: flex;
@@ -39,6 +56,15 @@
     padding: 3%;
     /* font-size: 3em; */
 }
+
+
+.project-container .curtain-reveal{
+    height: 100%;
+    width: 110%;
+    background-color: rgb(255 219 96);
+    position: absolute;
+}
+
 
 
 

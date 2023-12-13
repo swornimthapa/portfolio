@@ -17,13 +17,16 @@ window.addEventListener('scroll',function(){
         navbarBox.classList.add('fixed');
     }else{
         if(nextscrollpostion>currentscrollpostion){
+        
             navbarBox.classList.remove('fixed');
+        
         }else{
+            navbarBox.classList.add('hide');
+
             navbarBox.classList.add('fixed');
         }
     }
     currentscrollpostion=nextscrollpostion;
+    
 })
-
-
 
