@@ -121,6 +121,11 @@
     } 
 }
 
+@media only screen and (max-width:787px){
+    .project-section .line{
+        margin-left: 15vw;
+    }
+}
 
 @media only screen and (min-width: 700px) and (max-width: 815px){
     .project-main-container{
@@ -129,6 +134,12 @@
      .project-container img{
         height: 160px;
     }  
+}
+
+@media only screen and (max-width:431px){
+    .project-section .line{
+        width: 3px;
+    }
 }
 
 @media only screen and (max-width: 300px ){

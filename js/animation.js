@@ -6,6 +6,8 @@ function executeAnimation() {
   }
   executeSecondaryAnimations();
   shakeMouse();
+  // curtainReveal();
+  zoomIn();
 }
 
 function executeInitialAnimation() {
@@ -78,12 +80,34 @@ function shakeMouse() {
 }
 
 function curtainReveal() {
-  gsap.to(".curtain-reveal", {
+  gsap.to(".project-container .curtain-reveal", {
     width: 0,
     duration: 1,
     delay: 1,
     ease: Circ.easeOutIn,
+    scrollTrigger:{
+      trigger:".project-container .curtain-reveal",
+      scroller:"body",
+      markers:true,
+    }
   });
+}
+
+function zoomIn(){
+    gsap.from(".project-container",{
+      duration:1,
+      delay:0.5,
+      scale:0,
+      rotate:360,
+      // stagger:1,
+      opacity:0,
+      scrollTrigger:{
+        trigger:".project-container",
+        scroller:"body",
+        markers:true,
+        // scrub:3,
+      }
+    })
 }
 
 executeAnimation();
