@@ -5,8 +5,31 @@
     position: relative;
 }
 
+
+.project-section .reveal .parent{
+    display: block;
+    overflow: hidden;
+   
+}
+
+.reveal .child{
+    display: block;
+    transform: translate(0,100%);
+   
+}
+
+
+.project-section .projects-heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5vw;
+    color: rgb(211 212 217); 
+    margin-top: 3vh;
+    margin-left: 22vw;
+    font-weight: 100;
+}
+
 .project-section .line{
-    height: 100%;   
+    height: 0;   
     width: 4px;
     background-color:rgb(255 219 96);
     position: absolute;
@@ -37,20 +60,19 @@
 
 
 
-
 .project-container .parent{
     overflow: hidden;
+    display: block;
     
 }
 .project-container .parent .child{
     color:rgb(255 219 96);
     display: flex;
-    font-size: 3vmax;
+    /* font-size: 3vmax; */
     position: relative;
     width: max-content;
     transform: translate(100%,0);
 }
-
 
 
 
@@ -95,12 +117,7 @@
         padding: 0 13vw;
         padding-top:10vh
     }
-    /* .project-container{
-        display: flex;
-        justify-content: flex-end; */
-        /* justify-content: center; */
-    
-    /* } */
+
 }
 
 

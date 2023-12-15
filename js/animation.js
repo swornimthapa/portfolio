@@ -5,8 +5,10 @@ function executeAnimation() {
   }
   executeSecondaryAnimations();
   shakeMouse();
-  reveal("project-main-container.first", "project-main-container.first .project-container");
-reveal("project-main-container.second", "project-main-container.second .project-container");
+  lineReveal("project-section","project-section")
+  reveal("project-section");
+  revealProject("project-main-container.first", "project-main-container.first .project-container");
+  revealProject("project-main-container.second", "project-main-container.second .project-container");
 }
 
 function executeInitialAnimation() {
@@ -81,7 +83,7 @@ function shakeMouse() {
 
 
 
-function reveal(containerClass, triggerClass) {
+function revealProject(containerClass, triggerClass) {
   gsap.to(`.${containerClass} .reveal .parent .child`, {
     duration: 0.5,
     x: "0%",
@@ -94,5 +96,29 @@ function reveal(containerClass, triggerClass) {
     },
   });
 }
+
+function reveal(triggerClass){
+  gsap.to(".reveal .parent .child" ,{
+    duration: 0.5,
+    y: "0%",
+    ease: Circ.easeInOut,
+    scrollTrigger: {
+      trigger: `.${triggerClass}`,
+      scroller: "body",
+    },
+  });
+}
+
+function lineReveal(containerClass ,triggerClass){
+  gsap.to(`.${containerClass} .line`,{
+    height: "100%",
+    duration: 2,
+    scrollTrigger:{
+      trigger: `.${triggerClass}`,
+      scroller:"body",
+    }
+  })
+}
+
 
 executeAnimation();
