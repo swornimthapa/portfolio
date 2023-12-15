@@ -31,15 +31,34 @@
     display: flex;
     font-size: 3vmax;
     position: relative;
-    width: max-content;
-    /* width: 0;
-    overflow: hidden; */
+
 
 }
+
+
+
+
+.project-container .parent{
+    overflow: hidden;
+    
+}
+.project-container .parent .child{
+    color:rgb(255 219 96);
+    display: flex;
+    font-size: 3vmax;
+    position: relative;
+    width: max-content;
+    transform: translate(100%,0);
+}
+
+
+
+
 .project-child-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+   
 
 }
 .project-container img{
@@ -70,9 +89,7 @@
 
 /* Responsive code for project container */
 @media only screen and (max-width: 1300px ){
-    .project-container img{
-        /* height: 150px; */
-    }
+   
 
     .project-main-container{
         padding: 0 13vw;

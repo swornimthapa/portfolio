@@ -1,13 +1,12 @@
 // Check viewport width and execute animation only if it meets certain conditions
 function executeAnimation() {
-  // curtainReveal();
   if (window.innerWidth >= 1070) {
     executeInitialAnimation();
   }
   executeSecondaryAnimations();
   shakeMouse();
-  // curtainReveal();
-  zoomIn();
+  reveal("project-main-container.first", "project-main-container.first .project-container");
+reveal("project-main-container.second", "project-main-container.second .project-container");
 }
 
 function executeInitialAnimation() {
@@ -79,35 +78,21 @@ function shakeMouse() {
   });
 }
 
-function curtainReveal() {
-  gsap.to(".project-container .curtain-reveal", {
-    width: 0,
-    duration: 1,
-    delay: 1,
-    ease: Circ.easeOutIn,
-    scrollTrigger:{
-      trigger:".project-container .curtain-reveal",
-      scroller:"body",
-      markers:true,
-    }
-  });
-}
 
-function zoomIn(){
-    gsap.from(".project-container",{
-      duration:1,
-      delay:0.5,
-      scale:0,
-      rotate:360,
-      // stagger:1,
-      opacity:0,
-      scrollTrigger:{
-        trigger:".project-container",
-        scroller:"body",
-        markers:true,
-        // scrub:3,
-      }
-    })
+
+
+function reveal(containerClass, triggerClass) {
+  gsap.to(`.${containerClass} .reveal .parent .child`, {
+    duration: 0.5,
+    x: "0%",
+    ease: Circ.easeInOut,
+
+    scrollTrigger: {
+      trigger: `.${triggerClass}`,
+      scroller: "body",
+      // markers: true, // Enable markers for testing (you can remove this in production)
+    },
+  });
 }
 
 executeAnimation();
