@@ -2,13 +2,18 @@
 function executeAnimation() {
   if (window.innerWidth >= 1070) {
     executeInitialAnimation();
+  }else if(window.innerWidth < 1070){
+      executeInitalAnimationSmallerScreen();
   }
   executeSecondaryAnimations();
   shakeMouse();
-  lineReveal("project-section","project-section")
-  reveal("project-section");
+  lineReveal("project-section","project-section");
+  reveal("project-section","project-section");
   revealProject("project-main-container.first", "project-main-container.first .project-container");
   revealProject("project-main-container.second", "project-main-container.second .project-container");
+  reveal("skills-section","skills-section-container");
+  lineReveal("skills-section","skills-section");
+
 }
 
 function executeInitialAnimation() {
@@ -34,12 +39,30 @@ function executeInitialAnimation() {
     opacity: 0,
   });
 
-  
+}
+
+function executeInitalAnimationSmallerScreen(){
+  let t1 = gsap.timeline(); 
+  t1.from(".logo , i", {
+    y: -150,
+    duration: 0.5,
+    delay: 0.5,
+    opacity: 0,
+    stagger:0.1,
+  });
+
+  t1.from(".mouse", {
+    duration: 0.5,
+    scale: 0,
+    rotate: 360,
+    opacity: 0,
+  });
+    
 }
 
 function executeSecondaryAnimations(){
     let t2 = gsap.timeline();
-    t2.to(".line", {
+    t2.to(".home-section .line", {
       height: "100%",
       duration: 1,
       delay: 1,
@@ -97,11 +120,12 @@ function revealProject(containerClass, triggerClass) {
   });
 }
 
-function reveal(triggerClass){
-  gsap.to(".reveal .parent .child" ,{
+function reveal(containerClass,triggerClass){
+  gsap.to(`.${containerClass} .reveal .parent .child `,{
     duration: 0.5,
     y: "0%",
     ease: Circ.easeInOut,
+    stagger:0.1,
     scrollTrigger: {
       trigger: `.${triggerClass}`,
       scroller: "body",

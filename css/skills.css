@@ -1,16 +1,63 @@
 .skills-section{
-    background-color: rgb(255 219 96);;
+    background-color: rgb(255 219 96);
+    position: relative;
 }
 
 .skills-section-container{
-    padding: 10vh 10vw;
+    padding: 5vh 10vw;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     flex-wrap: wrap;
 }
 .skills-section-container svg{
-    margin: 20px 5vw;
+    margin: 20px 3vw;
+    height: 4rem;
 }
 
 
+.skills-section .line{
+    height: 0;   
+    /* height: 100%; */
+    width: 4px;
+    background-color:rgb(35 38 45);
+    position: absolute;
+    margin-left: 20vw;
+    /* z-index: 10; */
+}
 
+.skills-section .skills-heading{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2vw;
+    color: rgb(35 38 45);
+    padding-top: 3vh;
+    margin-left: 22vw;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 815px ){
+    .skills-section .skills-heading{
+        font-size: 1.5rem;
+     
+    }
+}
+
+
+@media only screen and (max-width:787px){
+    .skills-section  .line{
+        margin-left: 15vw;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .skills-section-container{
+        padding: 5vh 1vw;
+    
+    }
+
+}
+
+@media only screen and (max-width:431px){
+    .skills-section .line{
+        width: 3px;
+    }
+}
