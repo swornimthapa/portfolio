@@ -2,7 +2,8 @@
 function executeAnimation() {
   if (window.innerWidth >= 1070) {
     executeInitialAnimation();
-  }else if(window.innerWidth < 1070){
+  }
+  if(window.innerWidth < 1070){
       executeInitalAnimationSmallerScreen();
   }
   executeSecondaryAnimations();
@@ -17,16 +18,16 @@ function executeAnimation() {
 }
 
 function executeInitialAnimation() {
-  let t1 = gsap.timeline(); 
+  let t1 = gsap.timeline({ debug: true}); 
   t1.from(".logo .active", {
-    y: -150,
+    y: -60,
     duration: 0.5,
     delay: 0.5,
     opacity: 0,
   });
 
   t1.from(".navbar-box ul li", {
-    y: -150,
+    y: -50,
     duration: 0.5,
     opacity: 0,
     stagger: 0.2,
@@ -44,11 +45,11 @@ function executeInitialAnimation() {
 function executeInitalAnimationSmallerScreen(){
   let t1 = gsap.timeline(); 
   t1.from(".logo , i", {
-    y: -150,
+    y: -40,
     duration: 0.5,
     delay: 0.5,
     opacity: 0,
-    stagger:0.1,
+    stagger:0.2,
   });
 
   t1.from(".mouse", {
@@ -115,7 +116,7 @@ function revealProject(containerClass, triggerClass) {
     scrollTrigger: {
       trigger: `.${triggerClass}`,
       scroller: "body",
-      // markers: true, // Enable markers for testing (you can remove this in production)
+      // markers: true,
     },
   });
 }
@@ -144,5 +145,5 @@ function lineReveal(containerClass ,triggerClass){
   })
 }
 
-
 executeAnimation();
+

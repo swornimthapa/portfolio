@@ -1,0 +1,113 @@
+.contact-section{
+    background-color:rgb(27 28 32);
+    /* background-color: #ebe8dd; */
+    /* position: relative; */
+}
+
+.contact-section-container{
+    padding: 5vh 8vw;
+}
+
+.contact-section-container h1 {
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color:rgb(255 219 96);
+}
+.contact-main-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.contact-main-container .left-container{
+    width: 44%;
+    /* margin-right: 50px; */
+}
+.contact-main-container .right-container{
+    width: 45%;
+    /* width: 1000px; */
+}
+.contact-main-container .left-container h3{
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: rgb(255 219 96);
+}
+
+.left-container p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(211 212 217);
+}
+.contact-section-container .left-container .second-box{
+    padding-top: 30px;
+}
+
+
+form{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+form h3{
+
+    text-align: center;
+    color:  rgb(255 219 96);
+}
+form .form-inner-div{
+    display: flex;
+}
+
+
+form input , textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background-color:#f5f5f5;
+    font-size: 16px;
+}
+#name , #email{
+    width: 100%;
+}
+#email{
+    margin-left: 5px;
+}
+form button{
+    padding:10px;
+    background-color: rgb(255 219 96);
+    color: rgb(27 28 32);
+  
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px auto 0;
+}
+
+
+@media only screen and (max-width:980px){
+    .contact-main-container{
+        flex-direction: column;
+    }
+    .contact-main-container .left-container{
+        width: 100%;
+    }
+    .contact-main-container .right-container{
+        margin-top: 70px;
+        width: 100%;    
+    }
+    
+}
+@media only screen and (max-width:980px){
+    .contact-section-container h1 {
+        font-size: 1.5rem;
+    }
+    .contact-main-container .left-container h3{
+        font-size: 1.3rem;
+    }
+}

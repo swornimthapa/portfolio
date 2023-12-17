@@ -5,7 +5,9 @@
 
 .about-container{
     /* color:rgb(211 212 217); */
-   color: white;
+   /* color: white; */
+   color: rgb(211 212 217);
+
     display: flex;
     padding: 5vh 8vw;
     justify-content: space-between;
@@ -36,9 +38,9 @@
 }
 .about-photo {
     width: max-content;
-    padding: 30px 30px;
+    padding: 20px 20px;
     background-color:rgb(255 219 96);
-    border-radius: 8%;
+    /* border-radius: 8%; */
 }
 .about-photo img{
     height: 380px;
@@ -91,9 +93,9 @@
     }
 }
 @media only screen and (max-width: 500px ){
-    .about-photo {
+    /* .about-photo {
         padding: 25px 25px;
-    }
+    } */
 }
 
 @media only screen and (max-width: 450px ){
