@@ -20,7 +20,7 @@
     justify-content: space-between;
     position: relative;
 }
-.contact-main-container .left-container{
+.contact-main-container  .left-container{
     width: 44%;
     /* margin-right: 50px; */
 }
@@ -28,7 +28,7 @@
     width: 45%;
     /* width: 1000px; */
 }
-.contact-main-container .left-container h3{
+.contact-main-container  .left-container h3{
     text-align: left;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5rem;
@@ -41,7 +41,7 @@
     font-size: 1.2rem;
     color: rgb(211 212 217);
 }
-.contact-section-container .left-container .second-box{
+.contact-section-container  .left-container .second-box{
     padding-top: 30px;
 }
 
@@ -89,6 +89,15 @@ form button{
     margin: 10px auto 0;
 }
 
+
+.right-container .right-box .parent{
+    overflow: hidden;
+    display: block;
+}
+.right-container .right-box .parent .child{
+    transform: translate(100%,0);
+
+}
 
 @media only screen and (max-width:980px){
     .contact-main-container{

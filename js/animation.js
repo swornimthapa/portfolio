@@ -14,6 +14,13 @@ function executeAnimation() {
   revealProject("project-main-container.second", "project-main-container.second .project-container");
   reveal("skills-section","skills-section-container");
   lineReveal("skills-section","skills-section");
+  reveal("about-heading","about-heading");
+  reveal("about-container","about-intro-container");
+  revealProject("about-container","about-photo");
+  reveal("contact-heading","contact-heading");
+  reveal("left-container ","left-container ");
+  revealProject("right-container ","right-container");
+
 
 }
 

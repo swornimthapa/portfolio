@@ -48,6 +48,15 @@
 
 }
 
+.about-photo .parent{
+    overflow: hidden;
+    display: block;
+}
+
+.about-photo .parent .child{
+    transform: translate(100%,0);
+
+}
 
 .about-section .line{
   
