@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* position: relative; */
+    /* height: 100%; */
+}
+.main-container{
+    display: flex;
+    /* padding: 20px; */
+}
+.right-main-container{
+    height: 100vh;
+    width: 35%;
+    background-color: rgb(35 38 45);
+    padding: 40px;
+    position: fixed;
+    right: 0px;
+}
+.nav-arrow{
+    display: flex;
+    justify-content: space-between;
+}
+.left-main-container{
+    /* height: 100vh; */
+    width: 65%;
+    background-color: rgb(211 212 217);
+    /* position: relative; */
+}
+
+.home-nav-arrow a i{
+    color: rgb(255 219 96);
+    font-size: 25px;
+}
+.project-nav-arrow a i{
+    color: rgb(211 212 217);
+    font-size: 20px;
+    margin-left:5px
+}
+
+/* font-family: 'Righteous', sans-serif;
+font-size: 2rem;
+font-family: 'Bebas Neue', sans-serif; */
+.project-des-container{
+    color: white;
+}
+.project-des-container h2{
+    
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 55px;
+    font-size: 2rem;
+}
+.project-des-container p{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-top: 25px;
+}
+.button-container{
+    margin-top: 40px;
+}
+.button-container  button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    background-color: rgb(255 219 96);
+    color: rgb(35 38 45); 
+    padding: 10px 25px;
+}
+
+.left-main-container img{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 928px ){
+    .right-main-container{
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 865px ){
+
+    .main-container{
+        flex-direction: column-reverse;
+    }
+
+    .right-main-container{
+        width: 100%;
+        position: relative;
+        top: 0px;
+    }
+    .left-main-container{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:280px){
+    .project-des-container h2{
+        font-size: 1.5rem;
+    }
+    .project-des-container p{
+        font-size: 1rem;
+      
+    }
+    .button-container  button{
+        font-size: 0.7rem;
+
+       
+        padding: 10px 20px;
+    }
+}
