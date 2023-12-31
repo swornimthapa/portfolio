@@ -103,13 +103,16 @@ font-family: 'Bebas Neue', sans-serif; */
     width: 100%;
 }
 
+.button-container button:hover{
+    cursor: pointer;
+    color:rgb(35 38 45); 
+    background-color: rgb(211 212 217); 
+}
+
 
 @media only screen and (max-width: 928px ){
     .right-main-container{
         padding: 30px;
-        /* left:0px; */
-        /* width: 0%;
-        padding: 0; */
     }
 }
 
