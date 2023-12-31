@@ -23,7 +23,7 @@
     height: 0;
     top: 100%;
     position: absolute;
-   z-index: 30;
+    z-index: 30;
     
     background-color: rgb(255 219 96);
 }
@@ -38,15 +38,15 @@
 }
 .right-main-container{
     height: 100vh;
-    width: 35%;
+    /* width: 35%; */
     background-color: rgb(35 38 45);
     position: fixed;
     right: 0px;
     padding: 40px;
     z-index:10;
 
-    /* height: 0;
-    overflow: hidden; */
+    /* height: 0;*/
+    overflow: hidden; 
   
 
 }
@@ -107,6 +107,9 @@ font-family: 'Bebas Neue', sans-serif; */
 @media only screen and (max-width: 928px ){
     .right-main-container{
         padding: 30px;
+        /* left:0px; */
+        /* width: 0%;
+        padding: 0; */
     }
 }
 
@@ -117,9 +120,11 @@ font-family: 'Bebas Neue', sans-serif; */
     }
 
     .right-main-container{
-        width: 100%;
+        padding: 0;
+        width: 0%;
         position: relative;
-        top: 0px;
+        /* width: 0%; */
+        /* top: 0px; */
     }
     .left-main-container{
         width: 100%;

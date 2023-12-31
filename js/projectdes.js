@@ -25,7 +25,31 @@ t1.to(".nextfs",{
     onComplete: function() {
         document.body.style.overflow = "auto"; // or "visible"
     },
-});
+})
+
+if (window.innerWidth <= 865) {
+    // Animation specific to mobile view
+    t1.to(".right-main-container", {
+        // width :"0%",
+        width: "100%", // Adjust as needed
+        duration: 2,
+        delay: -0.3,
+        padding: "30px", // Adjust as needed
+        ease: Expo.easeInOut,
+    });
+}else{
+    t1.to(".right-main-container",{
+        // width:"100%",
+        width:"35%",
+        duration:2,
+        delay:-0.3,
+        // padding:"40px",
+        ease:Expo.easeInOut,
+})
+}
+
+
+
 
 
 
