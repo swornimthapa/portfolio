@@ -82,7 +82,11 @@
     position: absolute;
 }
 
-
+.home-section button:hover{
+    cursor: pointer;
+    color:rgb(35 38 45); 
+    background-color: rgb(211 212 217); 
+}
 
 
 

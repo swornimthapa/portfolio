@@ -154,9 +154,9 @@ function lineReveal(containerClass ,triggerClass){
 
 executeAnimation();
 
-let allImage = document.querySelectorAll(".zoom");
+let allprojectImage = document.querySelectorAll(".zoom");
 
-for(let temp of allImage){
+for(let temp of allprojectImage){
   temp.addEventListener("mouseover",() =>{
       gsap.to(temp,{
         duration:0.3,
@@ -172,3 +172,19 @@ for(let temp of allImage){
 });
 }
 
+let allskillImage = document.querySelectorAll(".zoomskill");
+for(let temp of allskillImage){
+  temp.addEventListener("mouseover",() =>{
+      gsap.to(temp,{
+        duration:0.3,
+        scale:1.7,
+      })
+  });
+
+  temp.addEventListener("mouseleave",() =>{
+    gsap.to(temp,{
+      duration:0.3,
+      scale:1,
+    })
+});
+}

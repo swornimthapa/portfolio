@@ -105,6 +105,9 @@
     text-decoration: none;
 }
 
+.home-section button:hover{
+    cursor: pointer;
+}
 
 /* .project-container .curtain-reveal{
     height: 100%;
